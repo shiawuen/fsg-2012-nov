@@ -1,0 +1,19 @@
+.highlight {
+  color: #B43333;
+}
+
+.highlight.yellow {
+  color:#FAE833;
+  text-shadow: 0 0 3px #000;
+}
+
+.highlight-notes {
+  padding-top: 0.2em;
+  display:     inline-block;
+}
+.plain img {
+  background: none !important;
+  box-shadow: none !important;
+  border:     none !important;
+  margin:     0    !important;
+}

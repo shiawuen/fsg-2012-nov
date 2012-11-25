@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      Things I learnt on responsive and animation
+      by shiawuen
+    </title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!--
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    -->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css' />
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/theme/beige.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <script>
+      // If the query includes 'print-pdf' we'll use the PDF print sheet
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Used to fade in a background when a specific slide state is reached -->
+      <div class="state-background"></div>
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1>Things I learnt on <br /><span class="highlight">responsive</span> <br />and <br /><span class="highlight">animation</span></h1>
+          <p><i><small>
+            by <a href="https://twitter.com/shiawuen">shiawuen</a>
+          </small></i></p>
+        </section>
+
+        <section>
+          <h2>Who am I?</h2>
+          <p>Front-end developer</p>
+          <p class="plain" style="margin-top:-.5em">
+            <img src="img/fm.png" width="115" alt="Favorite Medium, company I work for..." />
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="highlight">Disclaimer</span></h2>
+          <p>
+            What I going to talk about are extracts from project I currently working on.
+          </p>
+          <p class="highlight">
+            IT MIGHT NOT WORK FOR YOUR CASE.
+          </p>
+        </section>
+
+        <section>
+          <h2>What do I learnt on <span class="highlight">Responsive</span> and <span class="highlight">Animation</span>?</h2>
+
+          <ol>
+            <li>Use percentages, not pixels to position and size your elements</li>
+            <li>background-size is good, but no love from IE8 and below =\</li>
+            <li><code>display:none</code> is bad</li>
+            <li>Overlap hardware accelerated element with non-hardware accelerated element is not good</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Use <span class="highlight">percentages</span>, not <span class="highlight">pixels</span>?</h2>
+
+          <ul></ul>
+        </section>
+
+        <section>
+          <h2>background-size</h2>
+
+          <ul></ul>
+        </section>
+
+        <section>
+          <h2>display: none is <span class="highlight">bad</span>?</h2>
+          <p><a href="http://laurakalbag.com/display-none/">Post by Laura Kalbag</a></p>
+        </section>
+
+        <section>
+          <h2>
+            <span class="highlight">Overlap</span> hardware accelerated element
+            with
+            <span class="highlight">non-hardware accelerated</span> element
+            is not good
+          </h2>
+
+          <ul></ul>
+        </section>
+
+        <section>
+          <h2 style="margin-top:3em;">
+            <span class="highlight" style="font-size:4em;font-weight:800">
+              Thanks!
+            </span>
+          </h2>
+        </section>
+
+        <section>
+          <h2 style="margin-top:4em;"></h2>
+          <p><i><small>fin.</small></i></p>
+        </section>
+      </div>
+
+      <!-- The navigational controls UI -->
+      <aside class="controls">
+        <a class="left" href="#">&#x25C4;</a>
+        <a class="right" href="#">&#x25BA;</a>
+        <a class="up" href="#">&#x25B2;</a>
+        <a class="down" href="#">&#x25BC;</a>
+      </aside>
+
+      <!-- Presentation progress bar -->
+      <div class="progress"><span></span></div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+          { src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
