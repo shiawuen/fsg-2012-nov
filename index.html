@@ -54,14 +54,6 @@
         </section>
 
         <section>
-          <h2>Who am I?</h2>
-          <p>Front-end developer</p>
-          <p class="plain" style="margin-top:-.5em">
-            <img src="img/fm.png" width="115" alt="Favorite Medium, company I work for..." />
-          </p>
-        </section>
-
-        <section>
           <h2><span class="highlight">Disclaimer</span></h2>
           <p>
             What I going to talk about are extracts from project I currently working on.
@@ -72,42 +64,135 @@
         </section>
 
         <section>
-          <h2>What do I learnt on <span class="highlight">Responsive</span> and <span class="highlight">Animation</span>?</h2>
-
-          <ol>
-            <li>Use percentages, not pixels to position and size your elements</li>
-            <li>background-size is good, but no love from IE8 and below =\</li>
-            <li><code>display:none</code> is bad</li>
-            <li>Overlap hardware accelerated element with non-hardware accelerated element is not good</li>
-          </ol>
-        </section>
-
-        <section>
-          <h2>Use <span class="highlight">percentages</span>, not <span class="highlight">pixels</span>?</h2>
-
-          <ul></ul>
-        </section>
-
-        <section>
-          <h2>background-size</h2>
-
-          <ul></ul>
-        </section>
-
-        <section>
-          <h2>display: none is <span class="highlight">bad</span>?</h2>
-          <p><a href="http://laurakalbag.com/display-none/">Post by Laura Kalbag</a></p>
-        </section>
-
-        <section>
-          <h2>
-            <span class="highlight">Overlap</span> hardware accelerated element
-            with
-            <span class="highlight">non-hardware accelerated</span> element
-            is not good
+          <h2 style="margin-top: 4em;">
+            <span class="highlight yellow" style="font-size: 4em">So</span>…
+            What do I learn?
           </h2>
+        </section>
 
-          <p><a href="http://indiegamr.com/ios6-html-hardware-acceleration-changes-and-how-to-fix-them/">Post by Olaf</a></p>
+        <section>
+          <section>
+            <h2 style="font-size: 2.5em;margin-top: 2.5em;">Use <span class="highlight">percentages</span>, not <span class="highlight">pixels</span></h2>
+          </section>
+
+          <section>
+            <h3>Why not pixels?</h3>
+
+            <p>
+              When your page resize, <span class="highlight">elements
+              will not stay at the same place</span> where it
+              should be.
+            </p>
+
+            <p>
+              Then you <span class="highlight">end up 
+              reposition your elements</span>
+              using JavaScript (ninja!), plus
+              it don&rsquo;t work well…
+            </p>
+          </section>
+
+          <section>
+            <h3>But you <span class="highlight">can&rsquo;t use it all the time</span> right?</h3>
+
+            <p>YES, you still have to use JavaScript to <span class="highlight">manually set width and height for some elements</span>.</p>
+          </section>
+
+          <section>
+            <h3>Haha…seem you still need pixels!</h3>
+
+            <p>Yup, but this makes maintenance easier for me. =P</p>
+          </section>
+
+        </section>
+
+        <section>
+          <section>
+            <h2 style="margin-top: 2.25em;">
+              background-size is lovely,<br />
+              but <span class="highlight">IE hates it</span><br />
+              <small>(IE8 and below)</small>
+            </h2>
+          </section>
+
+          <section>
+            <h3>One size rule them all!</h3>
+
+            <p>
+              When <span class="highlight">size of elements</span> on page
+              <span class="highlight">depend on the width/height of the screen</span>,
+              you can easily have element position at correct position
+              and same proportions without using JavaScript.
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2 style="margin-top: 3.25em;">
+              display: none <span class="highlight">hurts</span> <small>on iOS</small>
+            </h2>
+          </section>
+
+          <section>
+            <h3>It causes perf issue!</h3>
+
+            <blockquote>
+              <span class="highlight">Changing the display-state on iOS</span>
+              is like adding or removing an element to and
+              from the DOM and is therefor a very heady
+              calculation depending on how many items you
+              have in your DOM that can 
+              <span class="highlight">easyly cause the UI to freeze for a second or more</span>.
+            </blockquote>
+            <p>
+              <small>
+                <a href="http://indiegamr.com/ios6-html-hardware-acceleration-changes-and-how-to-fix-them/">
+                  iOS6 html hardware acceleration changes and how to fix them
+                </a> by Olaf
+              </small></p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2 style="margin-top:2.25em;">
+              <span class="highlight">Overlap</span> hardware accelerated element
+              with
+              <span class="highlight">non-hardware accelerated</span> element
+              is not good
+            </h2>
+          </section>
+
+          <section>
+            <h3>How?</h3>
+            <img src="http://indiegamr.com/wp-content/uploads/ios6-performance-overlapping.png" alt="" />
+            <p>
+              <small>
+                <a href="http://indiegamr.com/ios6-html-hardware-acceleration-changes-and-how-to-fix-them/">
+                  iOS6 html hardware acceleration changes and how to fix them
+                </a> by Olaf
+              </small></p>
+          </section>
+        </section>
+
+        <section>
+          <h2>Links</h2>
+
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/CSS/background-size">
+              backgroud-size (mdn)
+            </a></li>
+            <li><a href="http://caniuse.com/#search=background-size">
+              background-size browser support
+            </a></li>
+            <li><a href="http://indiegamr.com/ios6-html-hardware-acceleration-changes-and-how-to-fix-them/">
+              iOS6 html hardware acceleration changes and how to fix them by Olaf
+            </a></li>
+            <li><a href="http://laurakalbag.com/display-none/">
+              display:none by Laura Kalbag
+            </a></li>
+          </ul>
         </section>
 
         <section>
